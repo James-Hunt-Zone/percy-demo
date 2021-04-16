@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - name: Build
+        run:  npm install
       - name: Percy Test
         uses: percy/snapshot-action@v0.1.2
         with:
